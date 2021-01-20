@@ -1,0 +1,47 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+
+    a {
+      margin-right: 20px;
+      text-decoration: inherit;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.87);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &Right {
+      display: flex;
+      align-items: center;
+      min-width: 13vw;
+      justify-content: space-between;
+
+      > .MuiSvgIcon-root {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__body {
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+
+    > img {
+      object-fit: contain;
+      height: 100px;
+    }
+  }
+}
